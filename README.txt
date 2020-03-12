@@ -17,4 +17,17 @@ DumpReparsePoint: Delete the reparse point data
 NativeSymlink: Create an object manager symbolic link
 SetOpLock: Tool to create oplocks on arbitrary files or directories
 
-The tools can be built with Visual Studio 2013
+The tools can be built with Visual Studio 2013.
+
+
+EDITs by qtc-de:
+
+Added two new tools and retarget the solution to SDK 10. The added tools are:
+
+CreateSymlinkDll: Same as CreateSymlink, but can be invokded via rundll32.exe
+CreateHardlinkDll: Same as CreateHardlink, but can be invoked via rundll32.exe
+
+The tools can be invokde like:
+
+rundll32.exe CreateSymlinkDll.dll,Link <LINK> <TARGET>
+rundll32.exe CreateHardlinkDll.dll,Link <LINK> <TARGET>

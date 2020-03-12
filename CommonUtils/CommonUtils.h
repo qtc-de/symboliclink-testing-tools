@@ -2,6 +2,7 @@
 
 #include <Windows.h>
 #include <string>
+#include <winternl.h>
 
 typedef void(__stdcall *console_output)(const char*);
 
